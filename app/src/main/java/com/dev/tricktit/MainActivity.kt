@@ -17,6 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.dev.tricktit.ui.theme.TricktItTheme
+import com.google.maps.android.compose.GoogleMap
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.serialization.Serializable
 
@@ -45,7 +46,9 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         startDestination = MapScreenDes
                     ){
-                        composable<MapScreenDes>(){}
+                        composable<MapScreenDes>(){
+                            GoogleMap()
+                        }
 
                         composable<CameraScreenDes>(){}
                     }

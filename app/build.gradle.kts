@@ -6,16 +6,17 @@ plugins {
     alias(libs.plugins.dagger.hilt)
     alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.mapsplatform.secrets.plugin)
 }
 
 android {
     namespace = "com.dev.tricktit"
-    compileSdk = 33
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.dev.tricktit"
         minSdk = 29
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
