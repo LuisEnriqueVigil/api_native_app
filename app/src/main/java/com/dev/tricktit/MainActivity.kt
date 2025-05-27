@@ -16,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.dev.tricktit.presentation.maps.MapSection
 import com.dev.tricktit.ui.theme.TricktItTheme
 import com.google.maps.android.compose.GoogleMap
 import dagger.hilt.android.AndroidEntryPoint
@@ -47,7 +48,9 @@ class MainActivity : ComponentActivity() {
                         startDestination = MapScreenDes
                     ){
                         composable<MapScreenDes>(){
-                            GoogleMap()
+                            MapSection(
+                                modifier = Modifier.fillMaxSize()
+                            )
                         }
 
                         composable<CameraScreenDes>(){}
