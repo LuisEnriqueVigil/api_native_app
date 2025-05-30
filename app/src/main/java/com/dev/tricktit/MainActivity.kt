@@ -16,7 +16,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.dev.tricktit.domain.Timer
+import com.dev.tricktit.domain.timer.Timer
 import com.dev.tricktit.presentation.maps.MapSection
 import com.dev.tricktit.ui.theme.TricktItTheme
 import dagger.hilt.android.AndroidEntryPoint

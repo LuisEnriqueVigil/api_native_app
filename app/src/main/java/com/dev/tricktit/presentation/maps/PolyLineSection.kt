@@ -1,7 +1,6 @@
 package com.dev.tricktit.presentation.maps
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.google.android.gms.maps.model.JointType
 import com.google.android.gms.maps.model.LatLng
